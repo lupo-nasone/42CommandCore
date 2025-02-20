@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ecarbona <ecarbona@student.42firenze.it    +#+  +:+       +#+        */
+/*   By: ecarbona <ecarbona@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:32:33 by ecarbona          #+#    #+#             */
-/*   Updated: 2025/02/17 14:28:03 by ecarbona         ###   ########.fr       */
+/*   Updated: 2025/02/19 17:33:19 by ecarbona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ typedef struct s_stack
 	struct s_stack	*before;
 }	t_stack;
 
-void	ft_free(char **tab, int wrld);
+void	ft_free(char **tab);
 void	free_stack(t_stack *a);
 void	print_stack(t_stack *stack);
 int		ft_stacksize(t_stack *lst);
@@ -37,6 +37,7 @@ void	min_pos(t_stack **a);
 int		take_pos_a(t_stack **a, t_stack *temp_a, t_stack *temp_b, int pos);
 t_stack	*find_best(t_stack **a, t_stack **b);
 void	check_doubles(t_stack **a, t_stack **b, t_stack *best);
+void	direct_sort(t_stack **a);
 int		sa(t_stack **a, int i);
 int		sb(t_stack **b, int i);
 int		ss(t_stack **a, t_stack **b, int i);
