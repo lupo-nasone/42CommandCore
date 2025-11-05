@@ -39,8 +39,6 @@ To use the custom `get_next_line` function, you typically compile the source fil
 ## 🚀 Function Prototype and Return Value
 
 ### Prototype
-
-```c
 char *get_next_line(int fd);
 
 Return Value
